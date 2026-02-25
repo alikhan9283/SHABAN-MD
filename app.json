@@ -1,0 +1,21 @@
+{
+  "name": "SMD",
+  "description": "Javascript WhatsApp bot powered by Mr Shaban",
+  "keywords": ["SHABAN-MD", "WhatsApp Bot", "SMD"],
+  "success_url": "/",
+
+  "stack": "heroku-24",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put your Baileys session-id here (Base64).",
+      "required": true
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
